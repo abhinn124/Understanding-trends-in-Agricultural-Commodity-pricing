@@ -27,7 +27,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0 ;
+  margin: 0;
 }
 article,
 aside,
@@ -13364,7 +13364,28 @@ memory usage: 6.8+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="In-order-to-filter-out-ouliers-we'll-begin-with-Univariate-analysis">In order to filter out ouliers we'll begin with Univariate analysis<a class="anchor-link" href="#In-order-to-filter-out-ouliers-we'll-begin-with-Univariate-analysis">&#182;</a></h5>
+<h3 id="Normality">Normality<a class="anchor-link" href="#Normality">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Why do we <b>normalize</b>?</p>
+<p><b>Normality</b> - When we talk about Normality, what we mean is that the data should look like a normal distribution. This is important because several statistic tests rely on this (e.g. t-statistics). In this exercise we'll just check univariate normality for 'msprice' (which is a limited approach). Remember that univariate normality doesn't ensure multivariate normality (which is what we would like to have), but it helps. Another detail to take into account is that in big samples (&gt;200 observations) normality is not such an issue.</p>
+<p>The point here is to test 'msprice' in a very lean way. We'll do this paying attention to:</p>
+<ul>
+<li><b>Histogram</b> - Kurtosis and skewness.</li>
+<li><b>Normal probability plot</b> - Data distribution should closely follow the diagonal that represents the normal distribution.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="In-order-to-try-and-filter-out-ouliers-we'll-begin-with-Univariate-analysis">In order to try and filter out ouliers we'll begin with Univariate analysis<a class="anchor-link" href="#In-order-to-try-and-filter-out-ouliers-we'll-begin-with-Univariate-analysis">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -13479,20 +13500,6 @@ Kurtosis:  -0.9632063347524178
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Multivariate-Analysis">Multivariate Analysis<a class="anchor-link" href="#Multivariate-Analysis">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Why do we <b>normalize</b>?</p>
-<p><b>Normality</b> - When we talk about it, what we mean is that the data should look like a normal distribution. This is important because several statistic tests rely on this (e.g. t-statistics). In this exercise we'll just check univariate normality for 'msprice' (which is a limited approach). Remember that univariate normality doesn't ensure multivariate normality (which is what we would like to have), but it helps. Another detail to take into account is that in big samples (&gt;200 observations) normality is not such an issue.</p>
-<p>The point here is to test 'msprice' in a very lean way. We'll do this paying attention to:</p>
-<ul>
-<li><b>Histogram</b> - Kurtosis and skewness.</li>
-<li><b>Normal probability plot</b> - Data distribution should closely follow the diagonal that represents the normal distribution.</li>
-</ul>
-
 </div>
 </div>
 </div>
